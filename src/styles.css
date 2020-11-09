@@ -1,1 +1,282 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Mitr';
+    src: url(assets/fonts/Mitr-Light.ttf) format("truetype")
+}
+
+body {
+    font-family: 'Mitr', sans-serif !important;
+    font-size: 16px !important;
+    height: 100vh;
+}
+
+span , .mat-list-item
+{
+    font-family: 'Mitr', sans-serif !important;
+}
+
+/* html {
+    //height: calc(var(--vh, 1vh) * 100);
+} */
+
+.spacer {
+    flex: 1;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    padding: 10px;
+    display: flex;
+    width: 100vw;
+    height: 52px;
+    max-height: 52px;
+    left: 0;
+    top: 0;
+    background-color: #7631C0;
+    color: white;
+    float: left;
+    clear: both;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header .left , .right, .my-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header .iconbutton {
+    font-size: 32px;
+}
+
+.header .iconbutton:hover {
+    cursor: pointer;
+}
+
+.header .headertitle {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.pagedisplay {
+    width: 100vw;
+}
+
+.content {
+    width: 100vw;
+    /* height: calc(100vh - 62px - 52px);  */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.pagecontent {
+    /* padding: 16px 0px 0px 0px; */
+    margin: 8px 0px 0px 0px;
+    /* display: flex;  */
+    align-items: flex-start;
+    /* justify-content: center; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
+}
+
+.mat-card-image {
+    margin: 0px 0px 16px 0px !important;
+}
+
+/* .content-noheader {
+    height: calc(100vh - 62px) !important;
+} */
+
+/* .content-nofooter {
+    height: calc((var(--vh, 1vh) * 100) - 52px) !important;
+}
+
+.content-noall {
+    height: calc(100vh) !important;
+} */
+
+.footer {
+    display: flex;
+    width: 100vw;
+    height: 62px;
+    max-height: 62px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.tabbars {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:0px;
+    margin: 0px;
+    height: 62px;
+}
+
+.tabbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    color: gray;
+}
+
+.tabbar i:hover {
+    cursor: pointer;
+}
+
+.tabbar i{
+    font-size: 24px;
+    
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+}
+
+.tabbarselected i{
+    font-size: 32px !important;
+
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+}
+
+.tabbarselected {
+    color: blue;
+}
+
+.nextcol {
+    margin-left: 5px;
+}
+
+.nextcol2 {
+    margin-left: 10px;
+}
+
+.nextrow {
+    margin-top: 8px;
+}
+
+.nextrow2 {
+    margin-top: 16px;
+}
+
+.nowarb {
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+.btn:focus , .mat-icon-button:focus, .mat-menu-item:focus, .mat-mini-fab:focus, .mat-fab:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.aligncenter {
+    display: flex;
+    justify-content: center;
+}
+
+.aligncentervertical {
+    display: flex;
+    align-items: center;
+}
+
+.aligncenterall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-menu i{
+    font-size: 24px;
+  }
+
+.my-subtitle {
+    color: darkcyan !important;
+}
+
+.text-sm {
+    font-size: 12px !important;
+}
+
+.text-md {
+    font-size: 16px !important;
+}
+
+.text-18 {
+    font-size: 20px !important;
+}
+
+.text-lg {
+    font-size: 24px !important;
+}
+
+.text-xlg {
+    font-size: 30px !important;
+}
+
+
+.devider-list-inline {
+    position: relative !important;
+    margin: 5px 0px 0px 0px !important;
+}
+
+.fab-right-bottom {
+    position: fixed !important;
+    right: 20px;
+    bottom: 16px;
+}
+
+.page-margin {
+    margin: 8px 8px 0px 8px !important;
+    padding: 0px 0px 8px 0px !important;
+}
+
+.item-box {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.alignspace {
+    display: flex;
+    justify-content: space-between;
+}
+
+#et-info-phone:before { content:'';}
+
+.mat-badge-content {
+    font-size: 10px !important;
+}
+
+.disable-notgray {
+    opacity: 1 !important;
+}
+
+.div-divider {
+    border-top: gray 1px solid;
+}
+
+
+
+  
+
+
