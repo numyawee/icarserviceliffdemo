@@ -75,6 +75,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ionic-loader
 
+ngx-spinner
+MIT
+
 ngx-toastr
 MIT
 The MIT License (MIT)
